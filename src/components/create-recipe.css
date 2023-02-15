@@ -1,0 +1,1210 @@
+@media only screen and (max-width: 600px) {
+    /* For the container */
+    #create-recipe-container {
+        width: 100%;
+    }
+
+    /* For the create-recipe form */
+    #create-recipe {
+        margin-top: 20px;
+        height: fit-content;
+        width: 95%;
+        margin: auto;
+    }
+
+    /* For all left-side-features */
+    #create-recipe-left-side-features {
+        border: none;
+    }
+
+    /* For the button of left-side-features */
+    #image-upload-button {
+        margin: auto;
+        width: fit-content;
+        margin-top: 5px;
+    }
+
+    #custom-file-upload {
+        cursor: pointer;
+        border: 2px dotted rgb(221, 221, 221);
+        width: 170px;
+        height: 140px;
+    }
+
+    #custom-file-upload i {
+        font-size: 45px;
+        color: rgb(170, 170, 170);
+        display: block;
+        margin: auto;
+        width: fit-content;
+    }
+
+    #add-photo {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #add-photo + p {
+        margin-top: -15px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    input[type="file"] {
+        display: none;
+    }
+
+    #selected-image {
+        width: 170px;
+        height: 140px;
+    }
+
+    /* For all label of create-recipe form */
+    #create-recipe label {
+        font-size: 17px;
+        margin: 15px 0px 5px 0px;
+    }
+
+    /* For all input of left-side-features */
+    .create-recipe-left-side-features-flex input {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        width: 100%;
+        height: 50px;
+        transition: 200ms ease-in-out;
+        padding: 6px 10px 6px 10px;
+    }
+
+    .create-recipe-left-side-features-flex input:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+
+    /* For the world cuisine select */
+    #world-cuisine {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        width: 100%;
+        height: 50px;
+        transition: 200ms ease-in-out;
+        padding: 6px 10px 6px 6px;
+    }
+
+    #world-cuisine:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+    
+    /* For the recipe name input */
+    #recipe-name {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        width: 100%;
+        height: 50px;
+        transition: 200ms ease-in-out;
+        padding: 6px 10px 6px 10px;
+    }
+
+    #recipe-name:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+
+    /* For all textarea of right-side-features */
+    #create-recipe-right-side-features textarea {
+        outline: none;
+        width: 100%;
+        border: 1px solid rgb(235, 235, 235);
+        transition: 200ms ease-in-out;
+        padding: 6px 10px 6px 10px;
+    }
+
+    #create-recipe-right-side-features textarea:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+    
+    /* For all radio tag*/
+    #private-recipe, #public-recipe {
+        cursor: pointer;        
+        opacity: 0;
+        position: absolute;
+    }
+    
+    #private-recipe-label, #public-recipe-label {
+        cursor: pointer;
+        display: flex;
+    }
+    
+    #private-recipe-label::before, #public-recipe-label::before {
+        content: "";
+        width: 1.5em; 
+        height: 1.5em;
+        border: 1px solid black;
+        border-radius: 50%;
+        margin-right: 0.5em;
+    }
+    
+    #private-recipe:checked + #private-recipe-label::before, #public-recipe:checked + #public-recipe-label::before {
+        content: "\002714";
+        background-color: orange;
+    }
+
+    #private-recipe-label + p, #public-recipe-label + p {
+        font-style: italic;
+        font-size: 14px;
+    }
+
+    /* For all bottom buttons */
+    #create-recipe-bottom-buttons {
+        display: flex;
+        width: 95%;
+        margin: auto;
+        margin-top: -25px;
+        margin-bottom: 10px;
+    }
+
+    #create-recipe-save-button {
+        height: 45px;
+        width: 50%;
+        margin: 25px 5px 0px 0px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+
+    #create-recipe-save-button:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+
+    #create-recipe-save-button + a {
+        width: 50%;
+        margin: 25px 0px 0px 5px;
+    }
+
+    #create-recipe-cancel-button {
+        height: 45px;
+        width: 100%;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+    
+    #create-recipe-cancel-button:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    /* For the container */
+    #create-recipe-container {
+        width: 100%;
+    }
+
+    /* For the create-recipe form */
+    #create-recipe {
+        margin-top: 20px;
+        height: fit-content;
+        width: 95%;
+        margin: auto;
+    }
+
+    /* For all left-side-features */
+    #create-recipe-left-side-features {
+        border: none;
+    }
+
+    /* For the button of left-side-features */
+    #image-upload-button {
+        margin: auto;
+        width: fit-content;
+        margin-top: 5px;
+    }
+
+    #custom-file-upload {
+        cursor: pointer;
+        border: 2px dotted rgb(221, 221, 221);
+        width: 170px;
+        height: 140px;
+    }
+
+    #custom-file-upload i {
+        font-size: 45px;
+        color: rgb(170, 170, 170);
+        display: block;
+        margin: auto;
+        width: fit-content;
+    }
+
+    #add-photo {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #add-photo + p {
+        margin-top: -15px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    input[type="file"] {
+        display: none;
+    }
+
+    #selected-image {
+        width: 170px;
+        height: 140px;
+    }
+
+    /* For all label of create-recipe form */
+    #create-recipe label {
+        font-size: 17px;
+        margin: 15px 0px 5px 0px;
+    }
+
+    /* For all input of left-side-features */
+    .create-recipe-left-side-features-flex input {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        width: 100%;
+        height: 50px;
+        transition: 200ms ease-in-out;
+        padding: 6px 10px 6px 10px;
+    }
+
+    .create-recipe-left-side-features-flex input:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+
+    /* For the world cuisine select */
+    #world-cuisine {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        width: 100%;
+        height: 50px;
+        transition: 200ms ease-in-out;
+        padding: 6px 10px 6px 6px;
+    }
+
+    #world-cuisine:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+    
+    /* For the recipe name input */
+    #recipe-name {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        width: 100%;
+        height: 50px;
+        transition: 200ms ease-in-out;
+        padding: 6px 10px 6px 10px;
+    }
+
+    #recipe-name:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+
+    /* For all textarea of right-side-features */
+    #create-recipe-right-side-features textarea {
+        outline: none;
+        width: 100%;
+        border: 1px solid rgb(235, 235, 235);
+        transition: 200ms ease-in-out;
+        padding: 6px 10px 6px 10px;
+    }
+
+    #create-recipe-right-side-features textarea:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+    
+    /* For all radio tag*/
+    #private-recipe, #public-recipe {
+        cursor: pointer;        
+        opacity: 0;
+        position: absolute;
+    }
+    
+    #private-recipe-label, #public-recipe-label {
+        cursor: pointer;
+        display: flex;
+    }
+    
+    #private-recipe-label::before, #public-recipe-label::before {
+        content: "";
+        width: 1.5em; 
+        height: 1.5em;
+        border: 1px solid black;
+        border-radius: 50%;
+        margin-right: 0.5em;
+    }
+    
+    #private-recipe:checked + #private-recipe-label::before, #public-recipe:checked + #public-recipe-label::before {
+        content: "\002714";
+        background-color: orange;
+    }
+
+    #private-recipe-label + p, #public-recipe-label + p {
+        font-style: italic;
+        font-size: 14px;
+    }
+
+    /* For all bottom buttons */
+    #create-recipe-bottom-buttons {
+        display: flex;
+        width: 95%;
+        margin: auto;
+        margin-top: -25px;
+        margin-bottom: 10px;
+    }
+
+    #create-recipe-save-button {
+        height: 45px;
+        width: 50%;
+        margin: 25px 5px 0px 0px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+
+    #create-recipe-save-button:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+
+    #create-recipe-save-button + a {
+        width: 50%;
+        margin: 25px 0px 0px 5px;
+    }
+
+    #create-recipe-cancel-button {
+        height: 45px;
+        width: 100%;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+    
+    #create-recipe-cancel-button:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+}
+
+@media only screen and (min-width: 956px) {
+    /* For the container */
+    #create-recipe-container {
+        width: 70%;
+        margin: auto;
+    }
+
+    /* For the create-recipe form */
+    #create-recipe {
+        margin-top: 20px;
+        height: fit-content;
+        width: 100%;
+        margin: auto;
+    }   
+
+    /* For all left-side-features */
+    #create-recipe-left-side-features {
+        border: none;
+    }
+
+    /* For the button of left-side-features */
+    #image-upload-button {
+        margin: auto;
+        width: fit-content;
+        margin-top: 5px;
+    }
+
+    #custom-file-upload {
+        cursor: pointer;
+        border: 2px dotted rgb(221, 221, 221);
+        width: 170px;
+        height: 140px;
+    }
+
+    #custom-file-upload i {
+        font-size: 45px;
+        color: rgb(170, 170, 170);
+        display: block;
+        margin: auto;
+        width: fit-content;
+    }
+
+    #add-photo {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #add-photo + p {
+        margin-top: -15px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    input[type="file"] {
+        display: none;
+    }
+
+    #selected-image {
+        width: 170px;
+        height: 140px;
+    }
+
+    /* For all label of create-recipe form */
+    #create-recipe label {
+        font-size: 17px;
+        margin: 15px 0px 5px 0px;
+    }
+
+    /* For all input of left-side-features */
+    .create-recipe-left-side-features-flex input {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        width: 100%;
+        height: 50px;
+        transition: 200ms ease-in-out;
+        padding: 6px 10px 6px 10px;
+    }
+
+    .create-recipe-left-side-features-flex input:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+
+    /* For the world cuisine select */
+    #world-cuisine {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        width: 100%;
+        height: 50px;
+        transition: 200ms ease-in-out;
+        padding: 6px 10px 6px 6px;
+    }
+
+    #world-cuisine:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+    
+    /* For the recipe name input */
+    #recipe-name {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        width: 100%;
+        height: 50px;
+        transition: 200ms ease-in-out;
+        padding: 6px 10px 6px 10px;
+    }
+
+    #recipe-name:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+
+    /* For all textarea of right-side-features */
+    #create-recipe-right-side-features textarea {
+        outline: none;
+        width: 100%;
+        border: 1px solid rgb(235, 235, 235);
+        transition: 200ms ease-in-out;
+        padding: 6px 10px 6px 10px;
+    }
+
+    #create-recipe-right-side-features textarea:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+    
+    /* For all radio tag*/
+    #private-recipe, #public-recipe {
+        cursor: pointer;        
+        opacity: 0;
+        position: absolute;
+    }
+    
+    #private-recipe-label, #public-recipe-label {
+        cursor: pointer;
+        display: flex;
+    }
+    
+    #private-recipe-label::before, #public-recipe-label::before {
+        content: "";
+        width: 1.5em; 
+        height: 1.5em;
+        border: 1px solid black;
+        border-radius: 50%;
+        margin-right: 0.5em;
+    }
+    
+    #private-recipe:checked + #private-recipe-label::before, #public-recipe:checked + #public-recipe-label::before {
+        content: "\002714";
+        background-color: orange;
+    }
+
+    #private-recipe-label + p, #public-recipe-label + p {
+        font-style: italic;
+        font-size: 14px;
+    }
+
+    /* For all bottom buttons */
+    #create-recipe-bottom-buttons {
+        display: flex;
+        width: 100%;
+        margin: auto;
+        margin-top: -25px;
+        margin-bottom: 10px;
+    }
+
+    #create-recipe-save-button {
+        height: 45px;
+        width: 50%;
+        margin: 25px 5px 0px 0px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+
+    #create-recipe-save-button:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+
+    #create-recipe-save-button + a {
+        width: 50%;
+        margin: 25px 0px 0px 5px;
+    }
+
+    #create-recipe-cancel-button {
+        height: 45px;
+        width: 100%;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+    
+    #create-recipe-cancel-button:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    /* For the container */
+    #create-recipe-container {
+        width: 60%;
+        margin: auto;
+    }
+
+    /* For the create-recipe form */
+    #create-recipe {
+        margin-top: 20px;
+        height: fit-content;
+        width: 100%;
+        margin: auto;
+    }
+
+    /* For all left-side-features */
+    #create-recipe-left-side-features {
+        border: none;
+    }
+
+    /* For the button of left-side-features */
+    #image-upload-button {
+        margin: auto;
+        width: fit-content;
+        margin-top: 5px;
+    }
+
+    #custom-file-upload {
+        cursor: pointer;
+        border: 2px dotted rgb(221, 221, 221);
+        width: 170px;
+        height: 140px;
+    }
+
+    #custom-file-upload i {
+        font-size: 45px;
+        color: rgb(170, 170, 170);
+        display: block;
+        margin: auto;
+        width: fit-content;
+    }
+
+    #add-photo {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #add-photo + p {
+        margin-top: -15px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    input[type="file"] {
+        display: none;
+    }
+
+    #selected-image {
+        width: 170px;
+        height: 140px;
+    }
+
+    /* For all label of create-recipe form */
+    #create-recipe label {
+        font-size: 17px;
+        margin: 15px 0px 5px 0px;
+    }
+
+    /* For all input of left-side-features */
+    .create-recipe-left-side-features-flex input {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        width: 100%;
+        height: 50px;
+        transition: 200ms ease-in-out;
+        padding: 6px 10px 6px 10px;
+    }
+
+    .create-recipe-left-side-features-flex input:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+
+    /* For the world cuisine select */
+    #world-cuisine {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        width: 100%;
+        height: 50px;
+        transition: 200ms ease-in-out;
+        padding: 6px 10px 6px 6px;
+    }
+
+    #world-cuisine:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+    
+    /* For the recipe name input */
+    #recipe-name {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        width: 100%;
+        height: 50px;
+        transition: 200ms ease-in-out;
+        padding: 6px 10px 6px 10px;
+    }
+
+    #recipe-name:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+
+    /* For all textarea of right-side-features */
+    #create-recipe-right-side-features textarea {
+        outline: none;
+        width: 100%;
+        border: 1px solid rgb(235, 235, 235);
+        transition: 200ms ease-in-out;
+        padding: 6px 10px 6px 10px;
+    }
+
+    #create-recipe-right-side-features textarea:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+    
+    /* For all radio tag*/
+    #private-recipe, #public-recipe {
+        cursor: pointer;        
+        opacity: 0;
+        position: absolute;
+    }
+    
+    #private-recipe-label, #public-recipe-label {
+        cursor: pointer;
+        display: flex;
+    }
+    
+    #private-recipe-label::before, #public-recipe-label::before {
+        content: "";
+        width: 1.5em; 
+        height: 1.5em;
+        border: 1px solid black;
+        border-radius: 50%;
+        margin-right: 0.5em;
+    }
+    
+    #private-recipe:checked + #private-recipe-label::before, #public-recipe:checked + #public-recipe-label::before {
+        content: "\002714";
+        background-color: orange;
+    }
+
+    #private-recipe-label + p, #public-recipe-label + p {
+        font-style: italic;
+        font-size: 14px;
+    }
+
+    /* For all bottom buttons */
+    #create-recipe-bottom-buttons {
+        display: flex;
+        width: 100%;
+        margin: auto;
+        margin-top: -25px;
+        margin-bottom: 10px;
+    }
+
+    #create-recipe-save-button {
+        height: 45px;
+        width: 50%;
+        margin: 25px 5px 0px 0px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+
+    #create-recipe-save-button:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+
+    #create-recipe-save-button + a {
+        width: 50%;
+        margin: 25px 0px 0px 5px;
+    }
+
+    #create-recipe-cancel-button {
+        height: 45px;
+        width: 100%;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+    
+    #create-recipe-cancel-button:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    /* For the container */
+    #create-recipe-container {
+        width: 62.5%;
+        margin: auto;
+    }
+
+    /* For the create-recipe form */
+    #create-recipe {
+        margin-top: 20px;
+        height: fit-content;
+        width: 100%;
+        margin: auto;
+    }
+
+    /* For all left-side-features */
+    #create-recipe-left-side-features {
+        border: none;
+    }
+
+    /* For the button of left-side-features */
+    #image-upload-button {
+        margin: auto;
+        width: fit-content;
+        margin-top: 5px;
+    }
+
+    #custom-file-upload {
+        cursor: pointer;
+        border: 2px dotted rgb(221, 221, 221);
+        width: 170px;
+        height: 140px;
+    }
+
+    #custom-file-upload i {
+        font-size: 45px;
+        color: rgb(170, 170, 170);
+        display: block;
+        margin: auto;
+        width: fit-content;
+    }
+
+    #add-photo {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #add-photo + p {
+        margin-top: -15px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    input[type="file"] {
+        display: none;
+    }
+
+    #selected-image {
+        width: 170px;
+        height: 140px;
+    }
+
+    /* For all label of create-recipe form */
+    #create-recipe label {
+        font-size: 17px;
+        margin: 15px 0px 5px 0px;
+    }
+
+    /* For all input of left-side-features */
+    .create-recipe-left-side-features-flex input {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        width: 100%;
+        height: 50px;
+        transition: 200ms ease-in-out;
+        padding: 6px 10px 6px 10px;
+    }
+
+    .create-recipe-left-side-features-flex input:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+
+    /* For the world cuisine select */
+    #world-cuisine {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        width: 100%;
+        height: 50px;
+        transition: 200ms ease-in-out;
+        padding: 6px 10px 6px 6px;
+    }
+
+    #world-cuisine:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+    
+    /* For the recipe name input */
+    #recipe-name {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        width: 100%;
+        height: 50px;
+        transition: 200ms ease-in-out;
+        padding: 6px 10px 6px 10px;
+    }
+
+    #recipe-name:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+
+    /* For all textarea of right-side-features */
+    #create-recipe-right-side-features textarea {
+        outline: none;
+        width: 100%;
+        border: 1px solid rgb(235, 235, 235);
+        transition: 200ms ease-in-out;
+        padding: 6px 10px 6px 10px;
+    }
+
+    #create-recipe-right-side-features textarea:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+    
+    /* For all radio tag*/
+    #private-recipe, #public-recipe {
+        cursor: pointer;        
+        opacity: 0;
+        position: absolute;
+    }
+    
+    #private-recipe-label, #public-recipe-label {
+        cursor: pointer;
+        display: flex;
+    }
+    
+    #private-recipe-label::before, #public-recipe-label::before {
+        content: "";
+        width: 1.5em; 
+        height: 1.5em;
+        border: 1px solid black;
+        border-radius: 50%;
+        margin-right: 0.5em;
+    }
+    
+    #private-recipe:checked + #private-recipe-label::before, #public-recipe:checked + #public-recipe-label::before {
+        content: "\002714";
+        background-color: orange;
+    }
+
+    #private-recipe-label + p, #public-recipe-label + p {
+        font-style: italic;
+        font-size: 14px;
+    }
+
+    /* For all bottom buttons */
+    #create-recipe-bottom-buttons {
+        display: flex;
+        width: 100%;
+        margin: auto;
+        margin-top: -25px;
+        margin-bottom: 10px;
+    }
+
+    #create-recipe-save-button {
+        height: 45px;
+        width: 50%;
+        margin: 25px 10px 0px 0px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+
+    #create-recipe-save-button:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+
+    #create-recipe-save-button + a {
+        width: 50%;
+        margin: 25px 0px 0px 5px;
+    }
+
+    #create-recipe-cancel-button {
+        height: 45px;
+        width: 100%;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+    
+    #create-recipe-cancel-button:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+}
+
+@media only screen and (min-width: 1712px) {
+    /* For the container */
+    #create-recipe-container {
+        width: 64%;
+        margin: auto;
+    }
+
+    /* For the create-recipe form */
+    #create-recipe {
+        margin-top: 20px;
+        height: fit-content;
+        width: 100%;
+        margin: auto;
+    }
+
+    /* For all left-side-features */
+    #create-recipe-left-side-features {
+        border: none;
+    }
+
+    /* For the button of left-side-features */
+    #image-upload-button {
+        margin: auto;
+        width: fit-content;
+        margin-top: 5px;
+    }
+
+    #custom-file-upload {
+        cursor: pointer;
+        border: 2px dotted rgb(221, 221, 221);
+        width: 170px;
+        height: 140px;
+    }
+
+    #custom-file-upload i {
+        font-size: 45px;
+        color: rgb(170, 170, 170);
+        display: block;
+        margin: auto;
+        width: fit-content;
+    }
+
+    #add-photo {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #add-photo + p {
+        margin-top: -15px;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    input[type="file"] {
+        display: none;
+    }
+
+    #selected-image {
+        width: 170px;
+        height: 140px;
+    }
+
+    /* For all label of create-recipe form */
+    #create-recipe label {
+        font-size: 17px;
+        margin: 15px 0px 5px 0px;
+    }
+
+    /* For all input of left-side-features */
+    .create-recipe-left-side-features-flex input {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        width: 100%;
+        height: 50px;
+        transition: 200ms ease-in-out;
+        padding: 6px 10px 6px 10px;
+    }
+
+    .create-recipe-left-side-features-flex input:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+
+    /* For the world cuisine select */
+    #world-cuisine {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        width: 100%;
+        height: 50px;
+        transition: 200ms ease-in-out;
+        padding: 6px 10px 6px 6px;
+    }
+
+    #world-cuisine:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+    
+    /* For the recipe name input */
+    #recipe-name {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        width: 100%;
+        height: 50px;
+        transition: 200ms ease-in-out;
+        padding: 6px 10px 6px 10px;
+    }
+
+    #recipe-name:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+
+    /* For all textarea of right-side-features */
+    #create-recipe-right-side-features textarea {
+        outline: none;
+        width: 100%;
+        border: 1px solid rgb(235, 235, 235);
+        transition: 200ms ease-in-out;
+        padding: 6px 10px 6px 10px;
+    }
+
+    #create-recipe-right-side-features textarea:hover {
+        border: 1px solid #aaa;
+        transition: 200ms ease-in-out;
+    }
+    
+    /* For all radio tag*/
+    #private-recipe, #public-recipe {
+        cursor: pointer;        
+        opacity: 0;
+        position: absolute;
+    }
+    
+    #private-recipe-label, #public-recipe-label {
+        cursor: pointer;
+        display: flex;
+    }
+    
+    #private-recipe-label::before, #public-recipe-label::before {
+        content: "";
+        width: 1.5em; 
+        height: 1.5em;
+        border: 1px solid black;
+        border-radius: 50%;
+        margin-right: 0.5em;
+    }
+    
+    #private-recipe:checked + #private-recipe-label::before, #public-recipe:checked + #public-recipe-label::before {
+        content: "\002714";
+        background-color: orange;
+    }
+
+    #private-recipe-label + p, #public-recipe-label + p {
+        font-style: italic;
+        font-size: 14px;
+    }
+
+    /* For all bottom buttons */
+    #create-recipe-bottom-buttons {
+        display: flex;
+        width: 100%;
+        margin: auto;
+        margin-top: -25px;
+        margin-bottom: 10px;
+    }
+
+    #create-recipe-save-button {
+        height: 45px;
+        width: 50%;
+        margin: 25px 10px 0px 0px;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+
+    #create-recipe-save-button:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+
+    #create-recipe-save-button + a {
+        width: 50%;
+        margin: 25px 0px 0px 5px;
+    }
+
+    #create-recipe-cancel-button {
+        height: 45px;
+        width: 100%;
+        border: none;
+        background-color: orange;
+        color: white;
+        transition: 200ms ease-in-out;
+    }
+    
+    #create-recipe-cancel-button:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+}
+ 

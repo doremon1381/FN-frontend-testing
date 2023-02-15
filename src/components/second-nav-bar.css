@@ -1,0 +1,1211 @@
+/* clears the 'X' delete in input html element from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
+
+/* For the navbar */
+#nav-bar2 {
+    background-color: white;
+    position: sticky;
+    border-bottom: 1px solid rgb(235, 235, 235);
+    z-index: 2;
+}
+
+.search-form2 {
+    border: 1px solid #ddd;
+    transition: 200ms ease-in-out;
+    border-radius: 3px;
+}
+
+.search-form2:hover {
+    border: 1px solid #aaa;
+    transition: 200ms ease-in-out;
+}
+
+.search-button2 {    
+    border: none;
+    background-color: white;
+    transition: 150ms ease-in-out;
+    height: 36px;
+    width: 32px;
+}
+
+.search-button2:hover {    
+    color: #fff;
+    background-color: orange;
+    transition: 150ms ease-in-out;
+}
+
+/* For the search icon */
+.search-icon:hover {
+    color: rgb(199, 199, 199);
+}
+
+/* For the notification icon */
+.bell-icon:hover {
+    color: rgb(199, 199, 199);
+}
+
+/* For the favorite button */
+.favorite-icon:hover {
+    color: rgb(199, 199, 199);
+}
+
+/* For the group of 3 buttons */
+#for-account {
+    display: flex;
+    border: solid;
+    width: fit-content;
+    background-color: rgb(245, 245, 245);
+}
+
+/* For the dropdown */
+    /* to remove the carpet */  
+#account-name-dropdown-button-in-second-nav-bar::after {
+    display: none; 
+}
+
+#account-name-dropdown-button-in-second-nav-bar {
+    box-shadow: none;
+    border-radius: 0px;
+    border: none;
+}
+
+#account-name-dropdown-button-in-second-nav-bar:hover {
+    background-color: rgb(216, 216, 216);
+}
+
+#account-dropdown-button-in-second-nav-bar::after {
+    display: none; 
+}
+
+#account-dropdown-button-in-second-nav-bar {
+    box-shadow: none;
+    background-color: gray;
+    border-radius: 0px;
+    border: none;
+}
+
+#account-dropdown-button-in-second-nav-bar:hover {
+    background-color: rgb(172, 172, 172);
+}   
+
+.drop-down-item2:focus {
+    background-color: orange;  
+    color: #fff;
+    outline: none;
+}
+
+#menu-dropdown-button-in-second-nav-bar::after {
+    display: none; 
+}
+
+/* For the down icon */
+.down-icon {
+    color: white;
+}
+
+/* For the menu icon */
+.menu-icon2:hover {
+    transform: scale(1.1) ;
+    transition: 250ms ease-in-out;
+}
+
+@media only screen and (max-width: 600px) {
+    /* For the container */
+    #nav-bar-container2 {
+        width: 100%;
+        margin: auto;
+        display: flex; 
+        justify-content: space-between;
+    }
+
+    /* For the set of features */
+    .features-set {
+        display: flex;
+        flex-direction: row;    
+    }
+    
+    /* For the logo */
+    .logo2 {
+        width: 20vw;
+        height: 70px;
+    }
+
+    /* For the search bar */
+    .search-bar2{
+        display: none;
+    }
+
+    .search-icon {
+        font-size: 25px;
+        color: gray;
+        display: block;
+        margin: 17px 0px 0px 0vw;
+        cursor: pointer;
+    }
+
+    /* For the notification button */
+    .bell-icon {
+        font-size: 25px;
+        color: gray;
+        margin: 17px 0px 0px 20px;
+    }
+
+    /* For the favorite button */
+    .favorite-icon {
+        font-size: 25px;
+        display: block;
+        color: gray;
+        margin: 13px 0px 0px 20px;
+    }
+
+    /* For the account part */
+    #for-account {
+        border: none;
+        background-color: white;
+    }
+
+    /* For the avatar */
+    #avatar {
+        display: inline-block;
+        width: fit-content;
+        height: fit-content;
+        background-color: white;
+        margin: 10px 5px 0px 15px;
+        border: none;
+    }
+
+    #avatar a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #avatar-image {
+        display: inline-block;
+        border-radius: 50%;
+        border: 1px solid;
+        height: 50px;
+        width: 50px;
+        transition: 250ms ease-in-out;
+    }
+
+    #avatar-image:hover {
+        transform: scale(1.1);
+        transition: 250ms ease-in-out;
+    }
+
+    /* For the account name */
+    #account-name-dropdown-button-in-second-nav-bar {
+        display: none;
+    }
+
+    #account-dropdown-button-in-second-nav-bar {
+        display: none;
+    }
+
+    /* For the menu icon */
+    #menu-dropdown-button-in-second-nav-bar {
+        box-shadow: none;
+        width: fit-content;
+        height: fit-content;
+        margin: 10px 10px 0px -4px;
+        border: none;
+    }
+
+    #menu-dropdown-button-content-in-second-nav-bar {
+        left: -120px;
+        top: 76px;
+    }
+
+    .menu-icon2 {
+        display: inline-block;
+        font-size: 20px;
+        padding-bottom: 5px;
+        transition: 250ms ease-in-out;
+    }
+
+    /* For the dropdown */
+    .drop-down-item2 {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    /* For the container */
+    #nav-bar-container2 {
+        width: 100%;
+        margin: auto;
+        display: flex; 
+        justify-content: space-around;
+    }
+
+    /* For the set of features */
+    .features-set {
+        display: flex;
+        flex-direction: row;  
+    }
+    
+    /* For the logo */
+    .logo2 {
+        width: 17vw;
+        height: 70px;
+        margin-left: 10px;
+    }
+
+    /* For the search bar */
+    .search-bar2 {
+        white-space: nowrap;
+        overflow: hidden;
+        width: fit-content;
+        margin: 16px 0vw 0vw 2vw;
+    }
+
+    .search-input2 {
+        border: none;
+        outline: none;
+        padding: 6px 10px 6px 10px;
+        width: 36vw;
+    }
+
+    .search-icon {
+        display: none;
+    }
+
+    /* For the notification button */
+    .bell-icon {
+        font-size: 25px;
+        color: gray;
+        margin: 17px 0px 0px 15px;
+    }
+
+    /* For the favorite button */
+    .favorite-icon {
+        font-size: 25px;
+        display: block;
+        color: gray;
+        margin: 13px 0px 0px 10px;
+    }
+
+    /* For the account part */
+    #for-account {
+        border: none;
+        background-color: white;
+    }
+
+    /* For the avatar */
+    #avatar {
+        display: inline-block;
+        width: fit-content;
+        height: fit-content;
+        background-color: white;
+        margin: 10px 5px 0px 10px;
+        border: none;
+    }
+
+    #avatar a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #avatar-image {
+        display: inline-block;
+        border-radius: 50%;
+        border: 1px solid;
+        height: 50px;
+        width: 50px;
+        transition: 250ms ease-in-out;
+    }
+
+    #avatar-image:hover {
+        transform: scale(1.1);
+        transition: 250ms ease-in-out;
+    }
+
+    /* For the account name */
+    #account-name-dropdown-button-in-second-nav-bar {
+        display: none;
+    }
+
+    #account-dropdown-button-in-second-nav-bar {
+        display: none;
+    }
+
+    /* For the menu icon */
+    #menu-dropdown-button-in-second-nav-bar {
+        box-shadow: none;
+        width: fit-content;
+        height: fit-content;
+        margin: 10px 10px 0px -4px;
+        border: none;
+    }
+
+    #menu-dropdown-button-content-in-second-nav-bar {
+        left: -120px;
+        top: 76px;
+    }
+
+    .menu-icon2 {
+        display: inline-block;
+        font-size: 20px;
+        transition: 250ms ease-in-out;
+    }
+
+    /* For the dropdown */
+    .drop-down-item2 {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /* For the container */
+    #nav-bar-container2 {
+        width: 100%;
+        margin: auto;
+        display: flex; 
+        justify-content: space-around;
+    }
+
+    /* For the set of features */
+    #features-set {
+        display: flex;
+        flex-direction: row; 
+    }
+    
+    /* For the logo */
+    .logo2 {
+        width: 15vw;
+        height: 70px;
+        margin-top: 5px;
+    }
+
+    /* For the search bar */
+    .search-bar2 { 
+        white-space: nowrap;
+        overflow: hidden;
+        width: fit-content;
+        margin: 20px 2vw 0vw 2vw;
+    }
+
+    .search-input2 {
+        border: none;
+        outline: none;
+        padding: 6px 10px 6px 10px;
+        width: 24vw;
+    }
+
+    .search-icon {
+        display: none;
+    }
+
+    /* For the notification button */
+    .bell-icon {
+        font-size: 25px;
+        color: gray;
+        margin: 20px 0px 0px 0px;
+    }
+
+    /* For the favorite button */
+    .favorite-icon {
+        font-size: 25px;
+        display: block;
+        color: gray;
+        margin: 16px 0px 0px 10px;
+    }
+
+    /* For the account part */
+    #for-account {
+        background-color: rgb(245, 245, 245);
+        margin: 9px 0px 12px 12px;
+        height: fit-content;
+        width: fit-content;
+    }
+
+    /* For the avatar */
+    #avatar {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        background-color: rgb(245, 245, 245);
+        margin: 0px 0px 0px 0px;
+    }
+
+    #avatar:hover {
+        background-color: rgb(216, 216, 216);
+        transition: 250ms ease-in-out;
+    }
+
+    #avatar a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #avatar-image {
+        display: inline-block;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        margin-left: -1px;
+    }
+
+    /* For the account */
+    #account-name-dropdown-button-in-second-nav-bar {
+        display: inline-block;
+        margin-top: 0px;
+        height: 60px;
+        border: none;
+    }
+
+    #account-name-dropdown-button-content-in-second-nav-bar {
+        left: -30px;
+        top: 78px;
+    }
+
+    #account-dropdown-button-in-second-nav-bar {
+        display: inline-block;
+        height: 60px;
+        border: none;
+    }
+
+    #account-dropdown-button-content-in-second-nav-bar {
+        left: -117px;
+        top: 78px;
+    }
+
+    /* For the menu icon */
+    #menu-dropdown-button-in-second-nav-bar {
+        box-shadow: none;
+        width: fit-content;
+        height: fit-content;
+        margin: 15px 20px 0px 5px;
+        border: none;
+    }
+
+    #menu-dropdown-button-content-in-second-nav-bar {
+        left: -100px;
+        top: 87px;
+    }
+
+    .menu-icon2 {
+        display: inline-block;
+        font-size: 20px;
+        padding-bottom: 5px;
+        transition: 250ms ease-in-out;
+    }
+
+    /* For the dropdown */
+    .drop-down-item2 {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 956px) {
+    /* For the container */
+    #nav-bar-container2 {
+        width: 85%;
+        margin: auto;
+        display: flex; 
+        justify-content: space-around;
+    }
+
+    /* For the set of features */
+    #features-set {
+        display: flex;
+        flex-direction: row;  
+    }
+    
+    /* For the logo */
+    .logo2 {
+        width: 13vw;
+        height: 70px;
+        margin-left: 10px;
+    }
+
+    /* For the search bar */
+    .search-bar2 {
+        white-space: nowrap;
+        overflow: hidden;
+        width: fit-content;
+        margin: 20px 0vw 0vw 2vw;
+    }
+
+    .search-input2 {
+        border: none;
+        outline: none;
+        padding: 6px 10px 6px 10px;
+        width: 23vw;
+    }
+
+    .search-icon {
+        display: none;
+    }
+
+    /* For the notification button */
+    .bell-icon {
+        font-size: 25px;
+        color: gray;
+        margin: 20px 0px 0px 15px;
+    }
+
+    /* For the favorite button */
+    .favorite-icon {
+        font-size: 25px;
+        display: block;
+        color: gray;
+        margin: 16px 0px 0px 10px;
+    }
+
+    /* For the account part */
+    #for-account {
+        background-color: rgb(245, 245, 245);
+        margin: 9px 0px 12px 12px;
+        height: fit-content;
+        width: fit-content;
+    }
+
+    /* For the avatar */
+    #avatar {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        background-color: rgb(245, 245, 245);
+        margin: 0px 0px 0px 0px;
+        transition: 250ms ease-in-out;
+    }
+
+    #avatar:hover {
+        background-color: rgb(216, 216, 216);
+        transition: 250ms ease-in-out;
+    }
+
+    #avatar a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #avatar-image {
+        display: inline-block;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        margin-left: -1px;
+    }
+
+    /* For the account */
+    #account-name-dropdown-button-in-second-nav-bar {
+        display: inline-block;
+        margin-top: 0px;
+        height: 60px;
+        border: none;
+    }
+
+    #account-name-dropdown-button-content-in-second-nav-bar {
+        left: -30px;
+        top: 78px;
+    }
+
+    #account-dropdown-button-in-second-nav-bar {
+        display: inline-block;
+        height: 60px;
+        border: none;
+    }
+
+    #account-dropdown-button-content-in-second-nav-bar {
+        left: -117px;
+        top: 78px;
+    }
+
+    /* For the menu icon */
+    #menu-dropdown-button-in-second-nav-bar {
+        box-shadow: none;
+        width: fit-content;
+        height: fit-content;
+        margin: 15px 20px 0px 5px;
+        border: none;
+    }
+
+    #menu-dropdown-button-content-in-second-nav-bar {
+        left: -110px;
+        top: 87px;
+    }
+
+    .menu-icon2 {
+        display: inline-block;
+        font-size: 20px;
+        padding-bottom: 5px;
+        transition: 250ms ease-in-out;
+    }
+
+    /* For the dropdown */
+    .drop-down-item2 {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #nav-bar-container2 {
+        width: 75%;
+        margin: auto;
+        display: flex; 
+        justify-content: space-around;
+    }
+
+    /* For the set of features */
+    #features-set {
+        display: flex;
+        flex-direction: row;  
+    }
+    
+    /* For the logo */
+    .logo2 {
+        width: 11vw;
+        height: 70px;
+        margin-left: 10px;
+    }
+
+    /* For the search bar */
+    .search-bar2 {
+        white-space: nowrap;
+        overflow: hidden;
+        width: fit-content;
+        margin: 20px 0vw 0vw 1vw;
+    }
+
+    .search-input2 {
+        border: none;
+        outline: none;
+        padding: 6px 10px 6px 10px;
+        width: 25vw;
+    }
+
+    .search-icon {
+        display: none;
+    }
+
+    /* For the notification button */
+    .bell-icon {
+        font-size: 25px;
+        color: gray;
+        margin: 20px 0px 0px 15px;
+    }
+
+    /* For the favorite button */
+    .favorite-icon {
+        font-size: 25px;
+        display: block;
+        color: gray;
+        margin: 16px 0px 0px 10px;
+    }
+
+    /* For the account part */
+    #for-account {
+        background-color: rgb(245, 245, 245);
+        margin: 9px 0px 12px 12px;
+        height: fit-content;
+        width: fit-content;
+    }
+
+    /* For the avatar */
+    #avatar {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        background-color: rgb(245, 245, 245);
+        margin: 0px 0px 0px 0px;
+        transition: 250ms ease-in-out;
+    }
+
+    #avatar:hover {
+        background-color: rgb(216, 216, 216);
+        transition: 250ms ease-in-out;
+    }
+
+    #avatar a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #avatar-image {
+        display: inline-block;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        margin-left: -1px;
+    }
+
+    /* For the account */
+    #account-name-dropdown-button-in-second-nav-bar {
+        display: inline-block;
+        margin-top: 0px;
+        height: 60px;
+        border: none;
+    }
+
+    #account-name-dropdown-button-content-in-second-nav-bar {
+        left: -30px;
+        top: 78px;
+    }
+
+    #account-dropdown-button-in-second-nav-bar {
+        display: inline-block;
+        height: 60px;
+        border: none;
+    }
+
+    #account-dropdown-button-content-in-second-nav-bar {
+        left: -117px;
+        top: 78px;
+    }
+
+    /* For the menu icon */
+    #menu-dropdown-button-in-second-nav-bar {
+        box-shadow: none;
+        width: fit-content;
+        height: fit-content;
+        margin: 15px 20px 0px 5px;
+        border: none;
+    }
+
+    #menu-dropdown-button-content-in-second-nav-bar {
+        left: -110px;
+        top: 87px;
+    }
+
+    .menu-icon2 {
+        display: inline-block;
+        font-size: 20px;
+        padding-bottom: 5px;
+        transition: 250ms ease-in-out;
+    }
+
+    /* For the dropdown */
+    .drop-down-item2 {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    #nav-bar-container2 {
+        width: 70%;
+        margin: auto;
+        display: flex; 
+        justify-content: space-around;
+    }
+
+    /* For the set of features */
+    #features-set {
+        display: flex;
+        flex-direction: row;  
+    }
+    
+    /* For the logo */
+    .logo2 {
+        width: 10vw;
+        height: 70px;
+        margin-left: 10px;
+    }
+
+    /* For the search bar */
+    .search-bar2 {
+        white-space: nowrap;
+        overflow: hidden;
+        width: fit-content;
+        margin: 20px 0vw 0vw 1vw;
+    }
+
+    .search-input2 {
+        border: none;
+        outline: none;
+        padding: 6px 10px 6px 10px;
+        width: 27vw;
+    }
+
+    .search-icon {
+        display: none;
+    }
+
+    /* For the notification button */
+    .bell-icon {
+        font-size: 25px;
+        color: gray;
+        margin: 20px 0px 0px 15px;
+    }
+
+    /* For the favorite button */
+    .favorite-icon {
+        font-size: 25px;
+        display: block;
+        color: gray;
+        margin: 16px 0px 0px 10px;
+    }
+
+    /* For the account part */
+    #for-account {
+        background-color: rgb(245, 245, 245);
+        margin: 9px 0px 12px 12px;
+        height: fit-content;
+        width: fit-content;
+    }
+
+    /* For the avatar */
+    #avatar {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        background-color: rgb(245, 245, 245);
+        margin: 0px 0px 0px 0px;
+        transition: 250ms ease-in-out;
+    }
+
+    #avatar:hover {
+        background-color: rgb(216, 216, 216);
+        transition: 250ms ease-in-out;
+    }
+
+    #avatar a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #avatar-image {
+        display: inline-block;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        margin-left: -1px;
+    }
+
+    /* For the account */
+    #account-name-dropdown-button-in-second-nav-bar {
+        display: inline-block;
+        margin-top: 0px;
+        height: 60px;
+        border: none;
+    }
+
+    #account-name-dropdown-button-content-in-second-nav-bar {
+        left: -30px;
+        top: 78px;
+    }
+
+    #account-dropdown-button-in-second-nav-bar {
+        display: inline-block;
+        height: 60px;
+        border: none;
+    }
+
+    #account-dropdown-button-content-in-second-nav-bar {
+        left: -117px;
+        top: 78px;
+    }
+
+    /* For the menu icon */
+    #menu-dropdown-button-in-second-nav-bar {
+        box-shadow: none;
+        width: fit-content;
+        height: fit-content;
+        margin: 15px 20px 0px 5px;
+        border: none;
+    }
+
+    #menu-dropdown-button-content-in-second-nav-bar {
+        left: -100px;
+        top: 87px;
+    }
+
+    .menu-icon2 {
+        display: inline-block;
+        font-size: 20px;
+        padding-bottom: 5px;
+        transition: 250ms ease-in-out;
+    }
+
+    /* For the dropdown */
+    .drop-down-item2 {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    #nav-bar-container2 {
+        width: 65%;
+        margin: auto;
+        display: flex; 
+        justify-content: space-around;
+    }
+
+    /* For the set of features */
+    #features-set {
+        display: flex;
+        flex-direction: row;  
+    }
+    
+    /* For the logo */
+    .logo2 {
+        width: 9vw;
+        height: 70px;
+        margin-left: 15px;
+    }
+
+    /* For the search bar */
+    .search-bar2 {
+        white-space: nowrap;
+        overflow: hidden;
+        width: fit-content;
+        margin: 20px 0vw 0vw 1vw;
+    }
+
+    .search-input2 {
+        border: none;
+        outline: none;
+        padding: 6px 10px 6px 10px;
+        width: 26vw;
+    }
+
+    .search-icon {
+        display: none;
+    }
+
+    /* For the notification button */
+    .bell-icon {
+        font-size: 25px;
+        color: gray;
+        margin: 20px 0px 0px 15px;
+    }
+
+    /* For the favorite button */
+    .favorite-icon {
+        font-size: 25px;
+        display: block;
+        color: gray;
+        margin: 16px 0px 0px 10px;
+    }
+
+    /* For the account part */
+    #for-account {
+        background-color: rgb(245, 245, 245);
+        margin: 9px 0px 12px 12px;
+        height: fit-content;
+        width: fit-content;
+    }
+
+    /* For the avatar */
+    #avatar {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        background-color: rgb(245, 245, 245);
+        margin: 0px 0px 0px 0px;
+        transition: 250ms ease-in-out;
+    }
+
+    #avatar:hover {
+        background-color: rgb(216, 216, 216);
+        transition: 250ms ease-in-out;
+    }
+
+    #avatar a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #avatar-image {
+        display: inline-block;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        margin-left: -1px;
+    }
+
+    /* For the account */
+    #account-name-dropdown-button-in-second-nav-bar {
+        display: inline-block;
+        margin-top: 0px;
+        height: 60px;
+        border: none;
+    }
+
+    #account-name-dropdown-button-content-in-second-nav-bar {
+        left: -30px;
+        top: 78px;
+    }
+
+    #account-dropdown-button-in-second-nav-bar {
+        display: inline-block;
+        height: 60px;
+        border: none;
+    }
+
+    #account-dropdown-button-content-in-second-nav-bar {
+        left: -117px;
+        top: 78px;
+    }
+
+    /* For the menu icon */
+    #menu-dropdown-button-in-second-nav-bar {
+        box-shadow: none;
+        width: fit-content;
+        height: fit-content;
+        margin: 15px 20px 0px 5px;
+        border: none;
+    }
+
+    #menu-dropdown-button-content-in-second-nav-bar {
+        left: -90px;
+        top: 87px;
+    }
+
+    .menu-icon2 {
+        display: inline-block;
+        font-size: 20px;
+        padding-bottom: 5px;
+        transition: 250ms ease-in-out;
+    }
+
+    /* For the dropdown */
+    .drop-down-item2 {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 1712px) {
+    #nav-bar-container2 {
+        width: 65%;
+        margin: auto;
+        display: flex; 
+        justify-content: space-around;
+    }
+
+    /* For the set of features */
+    #features-set {
+        display: flex;
+        flex-direction: row;  
+    }
+    
+    /* For the logo */
+    .logo2 {
+        width: 9vw;
+        height: 70px;
+        margin-left: 5px;
+    }
+
+    /* For the search bar */
+    .search-bar2 {
+        white-space: nowrap;
+        overflow: hidden;
+        width: fit-content;
+        margin: 20px 0vw 0vw 1vw;
+    }
+
+    .search-input2 {
+        border: none;
+        outline: none;
+        padding: 6px 10px 6px 10px;
+        width: 29vw;
+    }
+
+    .search-icon {
+        display: none;
+    }
+
+    /* For the notification button */
+    .bell-icon {
+        font-size: 25px;
+        color: gray;
+        margin: 20px 0px 0px 15px;
+    }
+
+    /* For the favorite button */
+    .favorite-icon {
+        font-size: 25px;
+        display: block;
+        color: gray;
+        margin: 16px 0px 0px 10px;
+    }
+
+    /* For the account part */
+    #for-account {
+        background-color: rgb(245, 245, 245);
+        margin: 9px 0px 12px 12px;
+        height: fit-content;
+        width: fit-content;
+    }
+
+    /* For the avatar */
+    #avatar {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        background-color: rgb(245, 245, 245);
+        margin: 0px 0px 0px 0px;
+        transition: 250ms ease-in-out;
+    }
+
+    #avatar:hover {
+        background-color: rgb(216, 216, 216);
+        transition: 250ms ease-in-out;
+    }
+
+    #avatar a {
+        text-decoration: none;
+        color: black;
+    }
+
+    #avatar-image {
+        display: inline-block;
+        border-radius: 50%;
+        height: 50px;
+        width: 50px;
+        margin-left: -1px;
+    }
+
+    /* For the account */
+    #account-name-in-second-nav-bar {
+        display: inline-block;
+        margin-top: 0px;
+        height: 60px;
+    }
+
+    #account-name-dropdown-button-content-in-second-nav-bar {
+        left: -30px;
+        top: 78px;
+    }
+
+    #account-dropdown-button-in-second-nav-bar {
+        display: inline-block;
+        height: 60px;
+        border: none;
+    }
+
+    #account-dropdown-button-content-in-second-nav-bar {
+        left: -117px;
+        top: 78px;
+    }
+
+    /* For the menu icon */
+    #menu-dropdown-button-in-second-nav-bar {
+        box-shadow: none;
+        width: fit-content;
+        height: fit-content;
+        margin: 15px 20px 0px 5px;
+        border: none;
+    }
+
+    #menu-dropdown-button-content-in-second-nav-bar {
+        left: -90px;
+        top: 87px;
+    }
+
+    .menu-icon2 {
+        display: inline-block;
+        font-size: 20px;
+        padding-bottom: 5px;
+        transition: 250ms ease-in-out;
+    }
+
+    /* For the dropdown */
+    .drop-down-item2 {
+        font-size: 15px;
+    }
+}

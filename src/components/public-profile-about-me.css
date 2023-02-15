@@ -1,0 +1,188 @@
+@media only screen and (max-width: 600px) {
+    /* For the container of top part */
+    #top-part-container-in-public-profile-about-me-page{
+        width: 100%;
+    }
+
+    /* For the container of public profile about me page */
+    #public-profile-about-me-page {
+        height: fit-content;
+        width: fit-content;
+        margin: -15px 0px 10px 10px
+    }
+
+    /* For the group buttons */
+    #group-buttons-in-public-profile-about-me-page {
+        overflow: auto;
+        white-space: nowrap;
+        max-width: 100%;
+        width: 100vw;
+    }
+
+    .group-button-in-public-profile-about-me-page {
+        border: none;
+        font-size: 15px;
+        height: 50px;
+        width: 130px;
+    }
+
+    .selected-button-in-public-profile-about-me-page {
+        color: white;
+        background-color: rgb(255, 123, 0);
+    }
+
+    .last-button-of-group-buttons-in-public-profile-about-me-page {
+        width: 110px;
+    }
+
+    /* For the informations section in public profile about me page */
+    #public-profile-about-me-page div {
+        margin-top: 25px;
+    }
+
+    .title-in-public-profile-about-me-page + p {
+        color: rgb(150, 150, 150);
+        margin-top: -15px;
+    }
+
+    .title-in-public-profile-about-me-page + a {
+        display: block;
+        color: orange;
+        margin-top: -15px;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    /* For the container of top part */
+    #top-part-container-in-public-profile-about-me-page{
+        width: 100%;
+    }
+
+    /* For the container of public profile about me page */
+    #public-profile-about-me-page {
+        height: fit-content;
+        width: fit-content;
+        margin: -15px 0px 10px 10px
+    }
+
+    /* For the group buttons */
+    #group-buttons-in-public-profile-about-me-page {
+        overflow: auto;
+        white-space: nowrap;
+        max-width: 100%;
+        width: 100vw;
+    }
+
+    .group-button-in-public-profile-about-me-page {
+        border: none;
+        font-size: 15px;
+        height: 50px;
+        width: 130px;
+    }
+
+    .selected-button-in-public-profile-about-me-page {
+        color: white;
+        background-color: rgb(255, 123, 0);
+    }
+
+    .last-button-of-group-buttons-in-public-profile-about-me-page {
+        width: 110px;
+    }
+
+    /* For the informations section in public profile about me page */
+    #public-profile-about-me-page div {
+        margin-top: 25px;
+    }
+
+    .title-in-public-profile-about-me-page + p {
+        color: rgb(150, 150, 150);
+        margin-top: -15px;
+    }
+
+    .title-in-public-profile-about-me-page + a {
+        display: block;
+        color: orange;
+        margin-top: -15px;
+    }
+}
+
+@media only screen and (min-width: 670px) {
+    /* For the group buttons */
+    .group-button-in-public-profile-about-me-page {
+        border: none;
+        font-size: 15px;
+        height: 50px;
+        width: 150px;
+    }
+}
+
+@media only screen and (min-width: 956px) { 
+    /* For the container of top part */
+    #top-part-container-in-public-profile-about-me-page{
+        width: 70%;
+        margin: auto; 
+    }
+
+    /* For the group buttons */
+    #group-buttons-in-public-profile-about-me-page {
+        overflow: auto;
+        white-space: nowrap;
+        border: none;
+        width: 100%;
+    }
+
+    .group-button-in-public-profile-about-me-page {
+        border: none;
+        font-size: 15px;
+        height: 50px;
+        width: 130px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    /* For the container of top part */
+    #top-part-container-in-public-profile-about-me-page{
+        width: 60%;
+        margin: auto; 
+    }
+
+    /* For the group buttons */
+    .group-button-in-public-profile-about-me-page {
+        border: none;
+        font-size: 15px;
+        height: 50px;
+        width: 140px;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    /* For the container of top part */
+    #top-part-container-in-public-profile-about-me-page{
+        width: 62%;
+        margin: auto; 
+    }
+
+    /* For the group buttons */
+    .group-button-in-public-profile-about-me-page {
+        border: none;
+        font-size: 15px;
+        height: 50px;
+        width: 160px;
+    }
+}
+
+@media only screen and (min-width: 1712px) { 
+    /* For the container of top part */
+    #top-part-container-in-public-profile-about-me-page{
+        width: 63.7%;
+        margin: auto; 
+    }
+
+    /* For the group buttons */
+    .group-button-in-public-profile-about-me-page {
+        border: none;
+        font-size: 15px;
+        height: 50px;
+        width: 180px;
+    }
+}

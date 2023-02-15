@@ -1,0 +1,118 @@
+/* For the user account */
+#user-account {
+    display: flex;
+}
+
+/* For the avatar-top */
+#avatar-top {
+    border: solid;
+    border-radius: 50%;
+    height: 80px;
+    width:  80px;
+    margin: 30px 0px 0px 10px;
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+}
+
+/* For the account-related part */
+#account-related {
+    display: flex;
+    flex-direction: column;
+    margin: 35px 0px 0px 10px;
+    height: 60px;
+    width: 200px;
+    color: rgb(226, 226, 226);
+}
+
+#account-name {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#icons-and-data {
+    display: block;
+    width: 200px;
+    margin-top: -15px;
+}
+
+.followers {
+    font-size: 20px;
+}
+
+.heart {
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+.dishes {
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+/* For the dropdown */
+#dropdown-button-in-half-top-part {
+    height: fit-content;
+    margin: 15px 15px 0px 0px;
+}
+
+#dropdown-button-in-half-top-part i {
+    font-size: 40px;
+    color: rgb(226, 226, 226);
+}
+
+#dropdown-button-content-in-half-top-part {
+    position: absolute;
+    background-color: rgb(255, 255, 255);   
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 4px; 
+}
+
+.dropdown-item-of-dropdown-button-in-half-top-part {
+    color: black;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    min-width: 170px;
+    padding: 12px;
+    border-bottom: 1px solid rgb(217, 217, 217);
+    font-size: 15px;
+}
+
+#last-item-of-dropdown-button-in-half-top-part {
+    border: none;
+}
+
+.dropdown-item-of-dropdown-button-in-half-top-part:hover {
+    color: black;
+    background-color: rgb(233, 236, 239);
+}
+
+.dropdown-item-of-dropdown-button-in-half-top-part:focus {
+    background-color: orange;  
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    #half-top-part-container {
+        display: flex;
+        height: 130px;
+        width: 100%;
+        background-image: url("top_background.jpg");
+        background-repeat: no-repeat;
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    /* For the top part */
+    #half-top-part-container {
+        display: flex;
+        height: 130px;
+        width: 100%;
+        background-image: url("top_background.jpg");
+        background-repeat: no-repeat;
+        justify-content: space-between;
+    }
+}

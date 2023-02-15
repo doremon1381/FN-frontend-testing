@@ -1,0 +1,169 @@
+    /* For the add-informations form */
+    #add-informations {
+        height: fit-content;
+        width: fit-content;
+    }
+
+    #about-me,
+    #my-location,
+    #contact-link {
+        height: 60px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    #about-me a {
+        color: rgb(255, 123, 0);
+        text-decoration: none;
+        display: block;
+        margin-top: -15px;
+    }
+
+    #my-location a {
+        color: rgb(255, 123, 0);
+        text-decoration: none;
+        display: block;
+        margin-top: -15px;
+    }
+
+    #contact-link a {
+        color: rgb(255, 123, 0);
+        text-decoration: none;
+        display: block;
+        margin-top: -15px;
+    }
+
+    /* For the edit profile button */
+    #go-to-profile-settings {
+        text-decoration: none;
+    }
+
+    #edit-profile-button {
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        border: none;
+        height: 50px;
+        width: 250px;
+        color: white;
+        background-color: orange;
+        transition: 200ms ease-in-out;
+    }
+
+    #edit-profile-button:hover {
+        background-color: rgb(255, 187, 60);
+        transition: 200ms ease-in-out;
+    }
+    
+@media only screen and (max-width: 600px) {
+    /* For the container */
+    #private-profile-container {
+        width: 100%;
+    }
+
+    /* For group buttons of nav bar */
+    #group-buttons {
+        overflow: auto;
+        white-space: nowrap;
+        width: 100vw;
+        max-width: 100%;
+    }
+
+    .group-button {
+        border: none;
+        font-size: 15px;
+        height: 50px;
+        width: 130px;
+    }
+
+    .selected-button {
+        color: white;
+        background-color: rgb(255, 123, 0);
+    }
+
+    .last-button {
+        width: 170px;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    /* For the container */
+    #private-profile-container {
+        width: 100%;
+    }
+
+    /* For group buttons of nav bar */
+    #group-buttons {
+        overflow: auto;
+        white-space: nowrap;
+        width: 100vw;
+        max-width: 100%;
+    }
+
+    .group-button {
+        border: none;
+        font-size: 15px;
+        height: 50px;
+        width: 130px;
+    }
+
+    .selected-button {
+        color: white;
+        background-color: rgb(255, 123, 0);
+    }
+
+    .last-button {
+        width: 170px;
+    }
+}
+
+@media only screen and (min-width: 956px) {
+    /* For the container */
+    #private-profile-container {
+        width: 70%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    /* For the container */
+    #private-profile-container {
+        width: 60%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    /* For the container */
+    #private-profile-container {
+        width: 62%;
+        margin: auto;
+    }
+
+    /* For group buttons of nav bar */
+    .group-button {
+        border: none;
+        font-size: 15px;
+        height: 50px;
+        width: 161px;
+    }
+}
+
+@media only screen and (min-width: 1712px) {
+    /* For the container */
+    #private-profile-container {
+        width: 63.7%;
+        margin: auto;
+    }
+
+    /* For group buttons of nav bar */
+    .group-button {
+        border: none;
+        font-size: 15px;
+        height: 50px;
+        width: 178px;    
+    }
+}
+
+
+

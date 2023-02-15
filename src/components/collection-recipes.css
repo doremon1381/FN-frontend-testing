@@ -1,0 +1,739 @@
+@media only screen and (max-width: 600px) {
+    /* For the container of top part */
+    #top-part-container-in-collection-recipes-page {
+        width: 100%;
+    }
+
+    /* For the container of collection recipes page */
+    #collection-recipes-page {
+        width: 95%;
+        margin: auto;
+    }
+
+    /* For the top section */
+    #top-section-of-collection-recipes-page {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+
+    /* For the "Collections" and "Recipes" buttons */
+    #favorites-recipes-and-collections-in-collection-recipes-page a button {
+        width: 100px;
+        height: 40px;
+        background-color: white;
+        border: none;
+        color: black;
+        border-bottom: 3px solid rgb(255, 123, 0);
+    }
+
+    #favorites-recipes-and-collections-in-collection-recipes-page a + a button {
+        color: rgb(180, 180, 180);
+        border-bottom: 3px solid rgb(200, 200, 200);
+    }
+
+    /* For the collection recipes sorting options */
+    #collection-recipes-sorting-options-in-collection-recipes-page {
+        display: flex;
+    }
+
+    #collection-recipes-sorting-options-in-collection-recipes-page label {
+        font-size: 16px;
+        margin: 10px 5px 0px 0px;
+        color: rgb(180, 180, 180);
+        margin-top: 7px;
+    }
+
+    #select-collection-recipes-sorting-options-in-collection-recipes-page {
+        border: none;
+        outline: none;
+        margin-top: 7px;
+        height: fit-content;
+    }
+
+    /* For add collection button */
+    #collections-in-collection-recipes-page a {
+        text-decoration: none;
+    }
+
+    #add-collection-button-in-collection-recipes-page {
+        display: block;
+        margin: auto;
+        width: 300px;
+        height: 451px;
+        border: 1px dashed rgb(175, 175, 175);
+        margin-bottom: 30px;
+    }
+
+    /* For add icon of add collection button */
+    #add-icon-in-collection-recipes-page {
+        background-color: white;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        margin: auto;
+        color: rgb(140, 140, 140);
+    }
+
+    #add-icon-in-collection-recipes-page i {
+        font-size: 35px;
+        display: inline-block;
+        margin: -6px 0px 0px 2px;
+    }
+
+    /* For add collection button name */
+    #add-icon-in-collection-recipes-page + p {
+        margin-top: 10px;   
+    }
+
+    /* For the popup */
+    #create-new-collection-form-in-collection-recipes-page {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+        transition: opacity 500ms;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 3;
+        overflow: auto;
+    }
+
+    #create-new-collection-form-in-collection-recipes-page:target {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    #popup-in-collection-recipes-page {
+        margin: 150px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 5px;
+        width: 400px;
+        position: relative;
+    }
+
+    #popup-in-collection-recipes-page div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #popup-in-collection-recipes-page div p {
+        font-size: 23px;
+    }
+
+    #close-button-of-create-new-collection-form {
+        margin-top: -5px;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #333;
+    }
+
+    #popup-in-collection-recipes-page div + hr {
+        margin-top: 0px;
+    }
+
+    #close-button-of-create-new-collection-form:hover {
+        color: orange;
+    }
+
+    #popup-in-collection-recipes-page div + hr + input {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        width: 100%;
+        height: 45px;
+        padding: 6px 10px 6px 10px;
+        font-size: 15px;
+    }
+
+    #popup-in-collection-recipes-page div + hr + input + textarea {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        width: 100%;
+        padding: 6px 10px 6px 10px;
+        font-size: 15px;
+        height: 200px;
+        margin-top: 5px;
+    }
+
+    #popup-in-collection-recipes-page div + hr + input + textarea + button {
+        width: 100%;
+        margin-top: 10px;
+        font-size: 14px;
+        height: 45px;
+        border: none;
+        background-color: orange;
+        color: white;
+    }
+
+    /* For collection in collection recipes page */
+    .collection-in-collection-recipes-page {
+        border: 1px solid rgb(216, 216, 216);
+        margin: auto;
+        margin-bottom: 30px;
+        width: fit-content;
+    }
+
+    /* For the save collection button */
+    .save-collection-button-in-collection-recipes-page {
+        border: none;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        background-color: rgb(255, 123, 0);
+        margin: 11px 0px 0px 227px;
+    }
+
+    .save-collection-button-in-collection-recipes-page i {
+        font-size: 35px;
+        color: white;
+    }
+
+    /* For the collection photo */
+    .save-recipe-button-in-collection-recipes-page + a {
+        text-decoration: none;
+    }
+
+    /* For the set of images */
+    .save-collection-button-in-collection-recipes-page + a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .set-of-containers-representing-the-collection-in-collection-recipes-page {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+        margin: 10px;
+    }
+
+    .set-of-containers-representing-the-collection-in-collection-recipes-page img {
+        display: block;
+        width: 136.5px;
+        height: 136.5px;
+        background-color: rgb(249, 249, 249);
+    }
+
+    /* For the collection name */
+    .save-collection-button-in-collection-recipes-page + a + a {
+        text-decoration: none;
+    }
+
+    .collection-name-in-collection-recipes-page {
+        color: black;
+        font-size: 18px;
+        margin-left: 10px;
+    }
+
+    /* For the number recipes of collection */
+    .number-recipes-of-collection-in-collection-recipes-page {
+        color: gray;
+        font-size: 14px;
+        margin: -18px 0px 0px 10px;
+    }
+
+    /* For the break line */
+    .number-recipes-of-collection-in-collection-recipes-page + hr {
+        border-top: 1px dotted black;
+        background-color: white;
+        margin: 20px 10px 0px 10px;
+    }
+
+    /* For avatar and information ralated to the creator of collection */
+    .avatar-and-information-related-to-the-creator-of-collection-in-collection-recipes-page {
+        display: flex;
+        margin: 20px 0px 20px 0px;
+    }
+
+    /* For avatar ralated to the creator of collection */
+    .avatar-and-information-related-to-the-creator-of-collection-in-collection-recipes-page a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .avatar-related-to-the-creator-of-collection-in-collection-recipes-page {
+        display: block;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-color: rgb(220, 220, 220);
+        margin-left: 10px;
+    }
+
+    /* For information related to the creator of collection */
+    .information-related-to-the-creator-of-collection-in-collection-recipes-page {
+        margin-left: 10px;
+    }
+    
+    .information-related-to-the-creator-of-collection-in-collection-recipes-page p {
+        color: gray;
+        font-size: 12px;
+        margin: auto;
+        margin-top: 2px;
+    }
+
+    .information-related-to-the-creator-of-collection-in-collection-recipes-page div {
+        display: flex;
+    }
+
+    .information-related-to-the-creator-of-collection-in-collection-recipes-page div i {
+        margin-right: 5px;
+    }
+    
+    .information-related-to-the-creator-of-collection-in-collection-recipes-page div p {
+        margin-right: 20px;
+    }
+
+    /* For icon */
+    .follower-icon-in-collection-recipes-page {
+        color: rgb(78, 145, 223);
+    }
+
+    .favorite-icon-in-collection-recipes-page {
+        color: orangered;
+    }
+
+    .made-recipes-icon-in-collection-recipes-page {
+        color: orange;
+    }
+
+    /* For load more recipes button */
+    #load-more-collections-button-in-collection-recipes-page {
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        width: 150px;
+        height: 45px;
+        font-size: 13px;
+        border: none;
+        background-color: rgb(240, 56, 0);
+        color: white;
+        font-weight: bold;
+    }
+
+    #load-more-collections-button-in-collection-recipes-page:hover {
+        background-color: rgb(216, 50, 0);
+    }
+}   
+
+@media only screen and (min-width: 601px) {
+    /* For the container of top part */
+    #top-part-container-in-collection-recipes-page {
+        width: 100%;
+    }
+
+    /* For the container of collection recipes page */
+    #collection-recipes-page {
+        width: 95%;
+        margin: auto;
+    }
+
+    /* For the top section */
+    #top-section-of-collection-recipes-page {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+
+    /* For the "Collections" and "Recipes" buttons */
+    #favorites-recipes-and-collections-in-collection-recipes-page a button {
+        width: 100px;
+        height: 40px;
+        background-color: white;
+        border: none;
+        color: black;
+        border-bottom: 3px solid rgb(255, 123, 0);
+    }
+
+    #favorites-recipes-and-collections-in-collection-recipes-page a + a button {
+        color: rgb(180, 180, 180);
+        border-bottom: 3px solid rgb(200, 200, 200);
+    }
+
+    /* For the collection recipes sorting options */
+    #collection-recipes-sorting-options-in-collection-recipes-page {
+        display: flex;
+    }
+
+    #collection-recipes-sorting-options-in-collection-recipes-page label {
+        font-size: 16px;
+        margin: 10px 5px 0px 0px;
+        color: rgb(180, 180, 180);
+        margin-top: 7px;
+    }
+
+    #select-collection-recipes-sorting-options-in-collection-recipes-page {
+        border: none;
+        outline: none;
+        margin-top: 7px;
+        height: fit-content;
+    }
+
+    /* For add collection button */
+    #collections-in-collection-recipes-page a {
+        text-decoration: none;
+    }
+
+    #add-collection-button-in-collection-recipes-page {
+        display: block;
+        margin: auto;
+        width: 300px;
+        height: 451px;
+        border: 1px dashed rgb(175, 175, 175);
+        margin-bottom: 30px;
+    }
+
+    /* For add icon of add collection button */
+    #add-icon-in-collection-recipes-page {
+        background-color: white;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        margin: auto;
+        color: rgb(140, 140, 140);
+    }
+
+    #add-icon-in-collection-recipes-page i {
+        font-size: 35px;
+        display: inline-block;
+        margin: -6px 0px 0px 2px;
+    }
+
+    /* For add collection button name */
+    #add-icon-in-collection-recipes-page + p {
+        margin-top: 10px;   
+    }
+
+    /* For the popup */
+    #create-new-collection-form-in-collection-recipes-page {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+        transition: opacity 500ms;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 3;
+        overflow: auto;
+    }
+
+    #create-new-collection-form-in-collection-recipes-page:target {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    #popup-in-collection-recipes-page {
+        margin: 150px auto;
+        padding: 20px;
+        background: #fff;
+        border-radius: 5px;
+        width: 400px;
+        position: relative;
+    }
+
+    /* For the pop up title and close button */
+    #popup-in-collection-recipes-page div {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #popup-in-collection-recipes-page div p {
+        font-size: 23px;
+    }
+
+    #close-button-of-create-new-collection-form {
+        margin-top: -5px;
+        font-size: 30px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #333;
+    }
+
+    #close-button-of-create-new-collection-form:hover {
+        color: orange;
+    }
+    
+    /* For the break line in pop up */
+    #popup-in-collection-recipes-page div + hr {
+        margin-top: 0px;
+    }
+
+    /* For the input in pop up */
+    #popup-in-collection-recipes-page div + hr + input {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        width: 100%;
+        height: 45px;
+        padding: 6px 10px 6px 10px;
+        font-size: 15px;
+    }
+
+    /* For the textarea in pop up */
+    #popup-in-collection-recipes-page div + hr + input + textarea {
+        outline: none;
+        border: 1px solid rgb(235, 235, 235);
+        width: 100%;
+        padding: 6px 10px 6px 10px;
+        font-size: 15px;
+        height: 200px;
+        margin-top: 5px;
+    }
+
+    /* For the button in pop up */
+    #popup-in-collection-recipes-page div + hr + input + textarea + button {
+        width: 100%;
+        margin-top: 10px;
+        font-size: 14px;
+        height: 45px;
+        border: none;
+        background-color: orange;
+        color: white;
+    }
+
+    /* For collection in collection recipes page */
+    .collection-in-collection-recipes-page {
+        border: 1px solid rgb(216, 216, 216);
+        margin: auto;
+        margin-bottom: 30px;
+        width: fit-content;
+    }
+
+    /* For the save collection button */
+    .save-collection-button-in-collection-recipes-page {
+        border: none;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        background-color: rgb(255, 123, 0);
+        margin: 11px 0px 0px 227px;
+    }
+
+    .save-collection-button-in-collection-recipes-page i {
+        font-size: 35px;
+        color: white;
+    }
+
+    /* For the collection photo */
+    .save-recipe-button-in-collection-recipes-page + a {
+        text-decoration: none;
+    }
+
+    /* For the set of images */
+    .save-collection-button-in-collection-recipes-page + a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .set-of-containers-representing-the-collection-in-collection-recipes-page {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+        margin: 10px;
+    }
+
+    .set-of-containers-representing-the-collection-in-collection-recipes-page img {
+        display: block;
+        width: 136.5px;
+        height: 136.5px;
+        background-color: rgb(249, 249, 249);
+    }
+
+    /* For the collection name */
+    .save-collection-button-in-collection-recipes-page + a + a {
+        text-decoration: none;
+    }
+
+    .collection-name-in-collection-recipes-page {
+        color: black;
+        font-size: 18px;
+        margin-left: 10px;
+    }
+
+    /* For the number recipes of collection */
+    .number-recipes-of-collection-in-collection-recipes-page {
+        color: gray;
+        font-size: 14px;
+        margin: -18px 0px 0px 10px;
+    }
+
+    /* For the break line */
+    .number-recipes-of-collection-in-collection-recipes-page + hr {
+        border-top: 1px dotted black;
+        background-color: white;
+        margin: 20px 10px 0px 10px;
+    }
+
+    /* For avatar and information ralated to the creator of collection */
+    .avatar-and-information-related-to-the-creator-of-collection-in-collection-recipes-page {
+        display: flex;
+        margin: 20px 0px 20px 0px;
+    }
+
+    /* For avatar ralated to the creator of collection */
+    .avatar-and-information-related-to-the-creator-of-collection-in-collection-recipes-page a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .avatar-related-to-the-creator-of-collection-in-collection-recipes-page {
+        display: block;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-color: rgb(220, 220, 220);
+        margin-left: 10px;
+    }
+
+    /* For information related to the creator of collection */
+    .information-related-to-the-creator-of-collection-in-collection-recipes-page {
+        margin-left: 10px;
+    }
+    
+    .information-related-to-the-creator-of-collection-in-collection-recipes-page p {
+        color: gray;
+        font-size: 12px;
+        margin: auto;
+        margin-top: 2px;
+    }
+
+    .information-related-to-the-creator-of-collection-in-collection-recipes-page div {
+        display: flex;
+    }
+
+    .information-related-to-the-creator-of-collection-in-collection-recipes-page div i {
+        margin-right: 5px;
+    }
+    
+    .information-related-to-the-creator-of-collection-in-collection-recipes-page div p {
+        margin-right: 20px;
+    }
+
+    /* For icon */
+    .follower-icon-in-collection-recipes-page {
+        color: rgb(78, 145, 223);
+    }
+
+    .favorite-icon-in-collection-recipes-page {
+        color: orangered;
+    }
+
+    .made-recipes-icon-in-collection-recipes-page {
+        color: orange;
+    }
+
+    /* For load more recipes button */
+    #load-more-collections-button-in-collection-recipes-page {
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        width: 150px;
+        height: 45px;
+        font-size: 13px;
+        border: none;
+        background-color: rgb(240, 56, 0);
+        color: white;
+        font-weight: bold;
+    }
+
+    #load-more-collections-button-in-collection-recipes-page:hover {
+        background-color: rgb(216, 50, 0);
+    }
+}
+
+@media only screen and (min-width: 670px) {
+    /* For the container of collections */
+    #collections-in-collection-recipes-page {
+        width: fit-content;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 15px;
+    }
+
+    /* For the top section */
+    #top-section-of-collection-recipes-page {
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (min-width: 956px) {
+    /* For the container of top part */
+    #top-part-container-in-collection-recipes-page {
+        width: 70%;
+        margin: auto; 
+    }
+
+    /* For the container of collection recipes page */
+    #collection-recipes-page {
+        width: 70%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    /* For the container of top part */
+    #top-part-container-in-collection-recipes-page {
+        width: 60%;
+        margin: auto;
+    }
+
+    /* For the container of collection recipes page */
+    #collection-recipes-page {
+        width: 60%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    /* For the container of top part */
+    #top-part-container-in-collection-recipes-page {
+        width: 62.5%;
+        margin: auto;
+    }
+
+    /* For the container of collection recipes page */
+    #collection-recipes-page {
+        width: 62.5%;
+        margin: auto;
+    }
+
+    /* For the container of collections */
+    #collections-in-collection-recipes-page {
+        width: fit-content;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 15px;
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (min-width: 1712px) {
+    /* For the container of top part */
+    #top-part-container-in-collection-recipes-page {
+        width: 64%;
+        margin: auto;
+    }
+    
+    /* For the container of collection recipes page */
+    #collection-recipes-page {
+        width: 64%;
+        margin: auto;
+    }
+}
+
