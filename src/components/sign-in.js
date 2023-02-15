@@ -8,7 +8,7 @@ import HidePassword from "./HidePassword.png";
 import ShowPassword from "./ShowPassword.png";
 //import {auth, provider} from "../firebase-config";
 //import {signInWithPopup} from "firebase/auth";
-// WARNING: Doremon1381 add
+// IDEA: Doremon1381 add
 import { useGoogleLogin } from '@react-oauth/google';
 
 /* Tìm hiểu về state và các hàm ở dưới (đến hàm render) để hiểu kỹ về chúng */
@@ -27,7 +27,7 @@ function SignIn({ setIsAuth }) {
         //}); 
     };
 
-    // WARNING: Doremon1381 add
+    // IDEA: Doremon1381 add
     const login = useGoogleLogin({
         onSuccess: codeResponse => console.log(codeResponse),
         flow: 'auth-code',
@@ -71,7 +71,7 @@ function SignIn({ setIsAuth }) {
                         <i className="bi bi-facebook"></i>
                         <div id="facebook-text">Facebook</div>
                     </button>
-                    { /* // WARNING: Doremon1381 add*/}
+                    { /* // IDEA: Doremon1381 add*/}
                     {/*<button id="google-sign-in" onClick={signInWithGoogle}>*/}
                     <button id="google-sign-in" onClick={login}>
                         <img className="google-icon" src={Google}></img>

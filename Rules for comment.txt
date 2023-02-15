@@ -1,0 +1,3 @@
+- // IDEA: == Adding to do sth, not ensure it work at that time
+- // WARNING: == not sure how it work, but overall, sequences of function still have result in acceptable manner.
+- // TODO: == will do sth later, with some problems.
